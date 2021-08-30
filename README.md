@@ -1,4 +1,4 @@
-This is the first file
+This is the first file with some essential commands in Github!
 
 **this is bold**
 
