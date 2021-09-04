@@ -1,4 +1,4 @@
-Autonomous Robots as Performing Agents Reading Response
+"Autonomous Robots as Performing Agents" Reading Response
 ======
 
 This paper features the initial purpose and building progress of physical **puppotics** actors **Woggles**. Those robots combine artificial intelligence, robotics and poppetry, aiming to entertain their audience. Woggles are inspired with their virtual version, while the authors of this paper state that they believe physical version will be more entertaining and engaging than virtual agents. As actors, there is no script or plots for those robots to follow. Their performance are highly interaction-driven given that they will see what other woggles are doing through sensors. 
