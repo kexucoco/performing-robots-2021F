@@ -1,4 +1,4 @@
-## Two motors with a switch to a control
+## Two motors with a switch
 
 I connect two monors to the H-bridge, and build a circuit with a button to control them. When the button is on, two motors run. This work is built on the in-class example with one motor and the built-in example of button.
 
