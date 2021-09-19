@@ -44,5 +44,5 @@ I think the physical production and lack of portable power unit are two main dif
 
 **Describe anything interesting you learned or discovered:**
 
-After a shor discussion with Zhiyang, we agree that changing the message to "Hello World" which will be more robotic. It sounds quite interesting for me since it refreshes my memory when I first entered the coding world :) But I preserved the original version of message as I loved the chinese characters on it. Another interesting part is the time consumed. Even such a weekly assignment spent my quite a while to brainstorm and produce. Hard to imagine more fancy projects, but it is a lot of fun!
+After a short discussion with Zhiyang, we agree that changing the message to "Hello World" which will be more robotic. It sounds quite interesting for me since it refreshes my memory when I first entered the coding world :) But I preserved the original version of message as I loved the chinese characters on it. Another interesting part is the time consumed. Even such a weekly assignment spent my quite a while to brainstorm and produce. Hard to imagine more fancy projects, but it is a lot of fun!
 
