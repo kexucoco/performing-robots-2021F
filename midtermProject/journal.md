@@ -26,6 +26,9 @@ My robot will be a rotating machine with a cute shiny alien head which will shak
 ![IMG_1159](https://user-images.githubusercontent.com/57734650/135758955-0f1abbb2-0bc9-449e-85cc-bd5127bd1eee.jpg)
 
 4. Built radio remote control. Current progress is click the button, the robot starts to rotate. **(Neopixel Sequence Missing. Will made that later. More coding later.)**
+
+
+
 ![IMG_1163](https://user-images.githubusercontent.com/57734650/135759231-f58995cd-c459-4f3f-a844-a01790c25ace.jpg)
 ![ezgif com-video-to-gif-3](https://user-images.githubusercontent.com/57734650/135759112-7fe7fca0-d65d-4f2c-b29a-381e85aa7b9f.gif)
 
