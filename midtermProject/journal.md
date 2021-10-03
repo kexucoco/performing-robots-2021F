@@ -23,6 +23,9 @@ My robot will be a rotating machine with a cute shiny alien head which will shak
 ![IMG_1161](https://user-images.githubusercontent.com/57734650/135758813-55c21700-c2be-4225-bdbe-b4a92b2b2cea.jpg)
 
 3. Add the Neopixel board to the main machine via several pillars made from toilet paper tube. **(Head cover missed, still finding appropriate material)**
+
+
+
 ![IMG_1159](https://user-images.githubusercontent.com/57734650/135758955-0f1abbb2-0bc9-449e-85cc-bd5127bd1eee.jpg)
 
 4. Built radio remote control. Current progress is click the button, the robot starts to rotate. **(Neopixel Sequence Missing. Will made that later. More coding later.)**
