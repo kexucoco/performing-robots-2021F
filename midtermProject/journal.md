@@ -35,6 +35,16 @@ My robot will be a rotating machine with a cute shiny alien head which will shak
 ![IMG_1163](https://user-images.githubusercontent.com/57734650/135759231-f58995cd-c459-4f3f-a844-a01790c25ace.jpg)
 ![ezgif com-video-to-gif-3](https://user-images.githubusercontent.com/57734650/135759112-7fe7fca0-d65d-4f2c-b29a-381e85aa7b9f.gif)
 
+5. Rearrange differnet parts of the robot and fix them on the main body, making it more easier to work with the wires.
+
+![IMG_1180](https://user-images.githubusercontent.com/57734650/136068127-8245e128-4a49-4ab1-a7f0-1a0b7761a06d.jpg)
+
+Less messy now!
+
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/57734650/136068471-b85abe77-8a08-43cd-a20a-7586c5c65889.gif)
+
+6. Resolder the wires for Neopixel as the original one is too short, test the Neopixel, build the curcuit. **(Learning the Neopixel coding...)**
+
 
 
 
