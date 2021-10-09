@@ -124,5 +124,5 @@ void loop() {
 
 I think the code itself works fine. But the problems lies on the fact that the transmitter will send a sequence of 1 to the receiver and then the motionState will not be stable as the received signal contains several pairs of start and stop signal. For the demo video, when I press the start button, it starts to rotate but theoretically it should continue to rotate until I press the button again. But the fact is that it sends several 1 signal and the robot will stop automatically. I think the robot in the demo is expressive and conveys the emergency status. But I hope I can figure out this state machine problem next class.
 
-Here is the link for the demo: https://youtu.be/rxnX0yNpkiw
+Here is the link for the demo: https://youtu.be/1QxlvHpe_2Q
 
