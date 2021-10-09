@@ -1,7 +1,7 @@
 
-## Midterm Project -- Lost Alien
+## Midterm Project -- Emergency Intelligencer
 
-My robot will be a rotating machine with a cute shiny alien head which will shake when it rotates. The illustration prototype is visualized here:
+My robot will be a rotating machine with a shiny alien head which will shake and rotate to convey the emergency status. The illustration prototype is visualized here:
 
 ![IMG_84C0F486D3CD-1](https://user-images.githubusercontent.com/57734650/135748669-0e93812f-db32-41aa-89ca-a0172e389d6f.jpeg)
 
@@ -9,9 +9,12 @@ My robot will be a rotating machine with a cute shiny alien head which will shak
 
 **Building parts (ideal):** It will have a circular body built with cardboard, arduino uno, batteries and H-bridge. Two DC motors will be sticked onto it and linked with two wheels. Another wheel will also be attached but without motor to make things easier. For the head part, I will make four springs to hold the NeoPixel so that it will shake with movement. Hope those solid wires will help me make the springs. On the Neopixel board, I intend to make a dome-like cover to serve as the cute head of the robot, and light should be transfer through the material.
 
-**How it will be expressive:** The emotion will be demonstrated through the rotation and light change. For instance, when the robot is calm, it will stand still and with its blue head shining. Then something frustrated or annoying happens. Its head will blink with yellow light to show the emergency status. Then it will rotate quickly and its head will turn read with the movement. More advancedly with the romote control, I can use the potentiometer to trigger the emergency status with rotation. Maybe I can add a sound part to build the senario.
+**How it will be expressive:** The emotion will be demonstrated through the rotation and light change. For instance, when the robot is calm, it will stand still and with its blue head shining. Then the emergency happens. Its head will blink with rainbow color to show the emergency status. Then it will rotate quickly and its head will turn red with the movement. More advancedly with the romote control, I can use the botton to trigger the emergency status with rotation. Maybe I can add a sound part to build the senario.
 
 **Current Progress and What Left:**
+
+
+**Construction Part:**
 
 1. Use solid wires to make springs. Connect it to the NeoPixel.
 ![IMG_1156](https://user-images.githubusercontent.com/57734650/135758505-7823ddfe-a9eb-4c61-9905-d406d0270dcf.jpg)
@@ -45,6 +48,81 @@ Less messy now!
 
 6. Resolder the wires for Neopixel as the original one is too short, test the Neopixel, build the curcuit. **(Learning the Neopixel coding...)**
 
+7. Made the shaking head using plastic bag and connect it to the neopixel board. I love the cross stick design which made the head stand!
 
 
+![IMG_1204](https://user-images.githubusercontent.com/57734650/136654153-7f189b68-ca8e-452d-94bd-b5d060937ba6.jpg)
+![IMG_1205](https://user-images.githubusercontent.com/57734650/136654155-c62f3d0c-4561-4f0d-99f5-6f669238080b.jpg)
+
+
+8. Add two eyes made of paper and solid string springs. This is what the robot looks like now:
+
+![IMG_1206](https://user-images.githubusercontent.com/57734650/136654229-78a51b6c-9ee3-4be5-aab9-bf228d6ae2a0.jpg)
+
+
+**Coding Part:**
+
+Referring to the class example, I made the radio connection between the button and robot. Robot rotation is easier to make while the difficulty is arrange all the electronics onto the robot and make it rotate stably. One main problem I met with the coding part is the application of state machine:
+
+```
+
+int lastButtonstate = LOW;
+int motionState = LOW;
+  
+void loop() {
+
+  int currentButtonstate = LOW;
+  
+  if (radio.available())  //Looking for the data.
+  {
+    int data;
+
+    radio.read(&data, sizeof(data));  //Reading the data
+
+    switch (data) {
+        break;
+      case 0x01:
+        Serial.println("button pressed");
+        currentButtonstate = HIGH;
+        break;
+      case 0x02:
+        break;
+      case 0x04:
+          stop();
+        break;
+      default:
+        Serial.println("invalid code");
+        break;
+    }
+
+    if ((lastButtonstate == LOW) && (currentButtonstate == HIGH)) { 
+      motionState = 1-motionState;
+      delay(10);
+    }
+
+    if (motionState == HIGH) {
+     Serial.println("afraidmode");
+     afraidmode();
+    } else{
+     Serial.println("calmmode");
+     stop();
+    }
+
+    lastButtonstate = currentButtonstate;
+
+    
+  } else {
+    Serial.println("stop");
+    stop();
+
+    //add code for quite mode
+  }
+  delay(5);
+}
+   
+```
+
+I think the code itself works fine. But the problems lies on the fact that the transmitter will send a sequence of 1 to the receiver and then the motionState will not be stable as the received signal contains several pairs of start and stop signal. For the demo video, when I press the start button, it starts to rotate but theoretically it should continue to rotate until I press the button again. But the fact is that it sends several 1 signal and the robot will stop automatically. I think the robot in the demo is expressive and conveys the emergency status. But I hope I can figure out this state machine problem next class.
+
+Here is the link for the demo: https://youtu.be/rxnX0yNpkiw
 
