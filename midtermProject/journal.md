@@ -62,7 +62,7 @@ Less messy now!
 
 **Coding Part:**
 
-Referring to the class example, I made the radio connection between the button and robot. Robot rotation is easier to make while the difficulty is arrange all the electronics onto the robot and make it rotate stably. One main problem I met with the coding part is the application of state machine:
+1. Referring to the class example, I made the radio connection between the button and robot. Robot rotation is easier to make while the difficulty is arrange all the electronics onto the robot and make it rotate stably. One main problem I met with the coding part is the application of state machine:
 
 ```
 
@@ -123,6 +123,11 @@ void loop() {
 ```
 
 I think the code itself works fine. But the problems lies on the fact that the transmitter will send a sequence of 1 to the receiver and then the motionState will not be stable as the received signal contains several pairs of start and stop signal. For the demo video, when I press the start button, it starts to rotate but theoretically it should continue to rotate until I press the button again. But the fact is that it sends several 1 signal and the robot will stop automatically. I think the robot in the demo is expressive and conveys the emergency status. But I hope I can figure out this state machine problem next class.
+
+===> Problem solved: The automatic stop resulted from the existence of stop() when the radio is unavailable. Also, I finally figured out I forgot to update the lastButtonstate when the radio is unavailabe. So the mistake is when the button is first pressed, the last button state will always be high as long as the radio is unavailable. I remove the stop() function and update the last button state to be LOW when the radio is unavailable. To initiate the robot, I add the stop() in the setup.
+
+2. I adjust the colorswipe function and rainbow function built for Neopixel to help the robot show different expressions.
+
 
 Here is the link for the demo: https://youtu.be/1QxlvHpe_2Q
 
