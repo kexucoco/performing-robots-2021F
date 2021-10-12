@@ -3,6 +3,8 @@
 
 My robot will be a rotating machine with a shiny alien head which will shake and rotate to convey the emergency status. 
 
+![IMG_1207](https://user-images.githubusercontent.com/57734650/136968512-07c8466d-4a31-4b6f-8c3b-023a94b9b2e1.jpg)
+
 Here is the link for the demo: https://youtu.be/NN6xslbjXJY
 
 The illustration prototype is visualized here:
