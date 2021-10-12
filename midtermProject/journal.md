@@ -134,11 +134,11 @@ Current Progress: link for the demo: https://youtu.be/rxnX0yNpkiw
 
   I set different brightness for the Neopixel to do the breathing effect:
   
-  '''
+  ```
   for (int i=50; i>0; i--) { strip.setBrightness(i); strip.show(); delay(10); }
   delay(1000);
   for (int k=1; k<50; k++) { strip.setBrightness(k); strip.show(); delay(10); }
-  '''
+  ```
   
 **Further Improvement:**
 
