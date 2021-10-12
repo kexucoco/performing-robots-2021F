@@ -124,10 +124,26 @@ void loop() {
 
 I think the code itself works fine. But the problems lies on the fact that the transmitter will send a sequence of 1 to the receiver and then the motionState will not be stable as the received signal contains several pairs of start and stop signal. For the demo video, when I press the start button, it starts to rotate but theoretically it should continue to rotate until I press the button again. But the fact is that it sends several 1 signal and the robot will stop automatically. I think the robot in the demo is expressive and conveys the emergency status. But I hope I can figure out this state machine problem next class.
 
+Current Progress: link for the demo: https://youtu.be/rxnX0yNpkiw
+
 ===> Problem solved: The automatic stop resulted from the existence of stop() when the radio is unavailable. Also, I finally figured out I forgot to update the lastButtonstate when the radio is unavailabe. So the mistake is when the button is first pressed, the last button state will always be high as long as the radio is unavailable. I remove the stop() function and update the last button state to be LOW when the radio is unavailable. To initiate the robot, I add the stop() in the setup.
 
 2. I adjust the colorswipe function and rainbow function built for Neopixel to help the robot show different expressions.
 
+3. To make the robot more expressive, I add the breathing effect for it, make the head have gradual light luminosity change which looks like it is alive. The rainbow function is removed from the main motion functions and only exists in the transformation stage to show the robot is changing status.
 
-Here is the link for the demo: https://youtu.be/1QxlvHpe_2Q
+  I set different brightness for the Neopixel to do the breathing effect:
+  
+  '''
+  for (int i=50; i>0; i--) { strip.setBrightness(i); strip.show(); delay(10); }
+  delay(1000);
+  for (int k=1; k<50; k++) { strip.setBrightness(k); strip.show(); delay(10); }
+  '''
+  
+**Further Improvement:**
+
+1. I took a while to make those springs and hope to see a shaking head when the robot rotates. However, the wires under the neopixel and the unstable plastic head makes the shaking not so obvious. Hope I can find more suitable material to trigger such effect next time.
+
+2. I think sound will help the robot to be much more expressive. I did not use buzzer for the time limit this time. Alternatively, I add sound via video editing. Hope next time I can use the buzzer to make live show!
+
 
