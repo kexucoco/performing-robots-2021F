@@ -1,7 +1,11 @@
 
 ## Midterm Project -- Emergency Intelligencer
 
-My robot will be a rotating machine with a shiny alien head which will shake and rotate to convey the emergency status. The illustration prototype is visualized here:
+My robot will be a rotating machine with a shiny alien head which will shake and rotate to convey the emergency status. 
+
+Here is the link for the demo: https://youtu.be/NN6xslbjXJY
+
+The illustration prototype is visualized here:
 
 ![IMG_84C0F486D3CD-1](https://user-images.githubusercontent.com/57734650/135748669-0e93812f-db32-41aa-89ca-a0172e389d6f.jpeg)
 
