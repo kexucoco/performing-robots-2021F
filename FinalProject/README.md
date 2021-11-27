@@ -9,7 +9,7 @@ Our Doc Dwarf is a leader among seven dwarfs which will act as the first robot c
 Construction:
 - DC motors for movement
 - Face: Neopixel Pad/Ring with face expressions
-- Body: water bottle containing LED strips and reflective materials, two hands holding flags with servo motors
+- Body: water bottle containing LED strips and reflective materials, two hands holding flag and hammer with servo motors
 
 Movement:
 - Nervous: Cycling with led blinking. Show angry face. Flag drops from the hand.
@@ -20,4 +20,7 @@ Movement:
 - Second Scene (Introduction of dwarfs)
   Doc leads other dwarfs in a line with flag instruction. It can move according to our control. The led strips inside its body will change with the rhythm of the     
   song.
-- 
+- Third Scene (Meet Snow White)
+  Doc meet Snow White first. He stops and approaches SW gradually. SW and Doc interact with simultaneour movement. Then all dwarfs leave.
+- Last Scene (Save Snow White)
+  Doc turns to nervous mode. Flag drops from his hand and he starts to move around and try to find the prince. He change his face into angry mode.
