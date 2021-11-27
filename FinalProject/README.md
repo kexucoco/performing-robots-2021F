@@ -18,9 +18,14 @@ Movement:
 **Rough Script:**
 
 - Second Scene (Introduction of dwarfs)
+
   Doc leads other dwarfs in a line with flag instruction. It can move according to our control. The led strips inside its body will change with the rhythm of the     
   song.
+  
 - Third Scene (Meet Snow White)
+
   Doc meet Snow White first. He stops and approaches SW gradually. SW and Doc interact with simultaneour movement. Then all dwarfs leave.
+  
 - Last Scene (Save Snow White)
+
   Doc turns to nervous mode. Flag drops from his hand and he starts to move around and try to find the prince. He change his face into angry mode.
