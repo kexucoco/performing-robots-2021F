@@ -6,6 +6,7 @@ Here is how our Doc robot looks like now:
 Here is our video for its main functions:
 
 Here is the proposal and design for Doc:
+
 [a relative link](Original Proposal.md)
 
 Here is the working progress documentation:
