@@ -7,6 +7,6 @@ Here is our video for its main functions:
 
 Here is the proposal and design for Doc:
 
-[a relative link](Original Proposal.md)
+[Link to the proposal](https://github.com/kexucoco/performing-robots-2021F/blob/main/FinalProject/Original%20Proposal.md)
 
 Here is the working progress documentation:
