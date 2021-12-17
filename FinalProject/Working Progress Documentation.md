@@ -29,9 +29,17 @@ We rewired the stuff and built a new body using the PEPERO snack box for the bod
 ![41051639291374_ pic_hd](https://user-images.githubusercontent.com/57734650/145703631-962e2286-b731-4364-80b1-eb24efc0bc0f.jpg)
 
 **Final Result**
+
+We decorated Doc with a red baby dress and nice hat!
+
 ![41061639291981_ pic_hd](https://user-images.githubusercontent.com/57734650/145703636-e4b4996e-4c95-420d-b1dc-7b99004f28ce.jpg)
+![IMG_2199](https://user-images.githubusercontent.com/57734650/146596576-f1fb1e24-2c39-4bac-a81c-1c6f9ac0be7d.jpg)
 
 
 ## Coding and Debugging!
 
+One main challenge is the undesireable and random movememnt of servo motors. At first we beleieve is resulted from using two Neopixel strips so we connected two Neopixel together by soldering and controled them with one analog input. However, the problem still existed. Katie mentioned in the group chat that this was a common conflict bewteen Neopixel and servo motors and suggested use the PWMServo Library to solve this problem. However, our arduino's pin 9 and 10 which are default pins for servo outputs defined in the PWMServo Library had been occupied by radio connections and we have done the soldering to fix them. Therefore, we finally deactivated one servo by taking off its output pin and connecting it purely to the power. It worked actually for the servo left, which we actually did not figure out the reason it worked. But thanks to our fortune, we made it!
+
 ![41071639292824_ pic_hd](https://user-images.githubusercontent.com/57734650/145703683-d4843d06-92ba-4370-a632-ba12705623c1.jpg)
+
+
